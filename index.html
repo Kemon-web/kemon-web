@@ -3,57 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelly Montes Buelvas | Arte Natural</title>
+    <title>Sombreros KEMON | Arte Natural</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            color: #333;
-            background-color: #fdfcf7;
+            font-family: 'Playfair Display', serif;
+            color: #2c2c2c;
+            background-color: #faf8f5;
             scroll-behavior: smooth;
         }
         header {
-            background-color: #a3c9a8;
+            background-color: #5a7262;
             color: #fff;
-            padding: 2rem;
+            padding: 2.5rem;
             text-align: center;
         }
         nav a {
-            margin: 0 1rem;
-            color: #fff;
+            margin: 0 1.2rem;
+            color: #f7f4ef;
             text-decoration: none;
             font-weight: bold;
+            font-family: 'Roboto', sans-serif;
         }
         section {
             padding: 3rem 2rem;
         }
         .titulo {
-            font-size: 2rem;
-            color: #2a5934;
+            font-size: 2.4rem;
+            color: #3f6043;
             margin-bottom: 1rem;
         }
         .subtitulo {
-            font-size: 1.4rem;
-            color: #4e7d5b;
+            font-size: 1.5rem;
+            color: #5a7262;
         }
         footer {
-            background-color: #a3c9a8;
+            background-color: #5a7262;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 1.2rem;
+            margin-top: 3rem;
         }
         .linea {
-            margin: 1rem 0;
-            padding: 1rem;
-            background: #e5e1d8;
-            border-left: 5px solid #74a584;
+            margin: 1.5rem 0;
+            padding: 1.2rem;
+            background: #e9e5db;
+            border-left: 6px solid #7d9d87;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+        }
+        .galeria img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .lightbox img {
+            max-width: 92%;
+            max-height: 92%;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Kelly Montes Buelvas</h1>
+    <h1>Sombreros KEMON</h1>
     <p>Arte natural, tradición y biodiversidad</p>
     <nav>
         <a href="#inicio">Inicio</a>
@@ -64,58 +102,53 @@
     </nav>
 </header>
 
-<section id="inicio">
-    <h2 class="titulo">Bienvenida</h2>
-    <p><strong>Bienvenida a mi rincón artesanal, donde el arte y la naturaleza se abrazan en cada pincelada.</strong>
-    Soy <strong>Kelly Montes Buelvas</strong>, una artista colombiana apasionada por la conservación ambiental y la riqueza de nuestra biodiversidad. Aquí encontrarás sombreros y abanicos de paja natural, pintados a mano con amor y dedicados a contar las historias de nuestro territorio.</p>
-    <p class="subtitulo">"Arte que honra la biodiversidad, tradición que florece en cada pincelada."</p>
-</section>
-
-<section id="sobre-mi">
-    <h2 class="titulo">Sobre mí</h2>
-    <p>Mi nombre es <strong>Kelly Montes Buelvas</strong> y soy una artista enamorada de mi tierra y sus colores. Mi pasión por la conservación ambiental me llevó a crear piezas únicas que combinan arte, tradición y naturaleza.</p>
-    <p>Pinto sobre sombreros y abanicos de paja natural, rescatando técnicas artesanales y plasmando en cada obra la belleza de nuestros paisajes, animales y festividades. Mi propósito es rendir homenaje a Colombia y a quienes valoran el arte con identidad.</p>
-</section>
-
-<section id="productos">
-    <h2 class="titulo">Líneas de Productos</h2>
-    <div class="linea">
-        <h3>🎭 Línea Carnavalera</h3>
-        <p>Colores vibrantes, personajes alegres y la esencia del Carnaval de Barranquilla plasmada en sombreros y abanicos que bailan al ritmo del Caribe.</p>
-    </div>
-    <div class="linea">
-        <h3>🦜 Línea Colombia Biodiversa</h3>
-        <p>Guacamayos, jaguares, ranas, mariposas y más animales de nuestro territorio pintados sobre paja natural, celebrando la vida y la diversidad de Colombia.</p>
-    </div>
-    <div class="linea">
-        <h3>🏛️ Línea UdeC</h3>
-        <p>Inspirada en la historia y arquitectura de la Universidad de Cartagena. Sombreros que guardan recuerdos de sus patios, columnas y tradiciones coloniales.</p>
-    </div>
-    <div class="linea">
-        <h3>📖 Línea Macondo</h3>
-        <p>Actualmente en producción. Una colección que fusiona realismo mágico, naturaleza y leyenda, homenajeando a Gabriel García Márquez y su universo literario.</p>
-    </div>
-</section>
-
 <section id="galeria">
-    <h2 class="titulo">Galería</h2>
-    <p>Próximamente podrás descubrir aquí el detalle artesanal de mis creaciones. Cada pieza cuenta una historia y refleja el alma de mi trabajo.</p>
+  <h2 class="titulo">Galería</h2>
+  <p>Aquí podrás descubrir el detalle artesanal de mis creaciones. Cada pieza cuenta una historia y refleja el alma de mi trabajo.</p>
+
+  <section id="galeria-carnavalera">
+    <h2>Línea Carnavalera</h2>
+    <p>Colores vibrantes, máscaras y alegría del Carnaval de Barranquilla plasmados en sombreros y abanicos de paja.</p>
+    <div class="galeria">
+      <img src="imagen/kemon-webimgcarnavalera1.jpg.jpeg" alt="Sombrero carnavalero 1">
+    </div>
+  </section>
+
+  <section id="galeria-biodiversa">
+    <h2>Línea Colombia Biodiversa</h2>
+    <p>El guacamayo y otros animales colombianos como protagonistas sobre sombreros y abanicos de paja natural.</p>
+    <div class="galeria">
+      <img src="imagen/imgbiodiversa1.jpg.jpeg" alt="Sombrero pintado biodiverso">
+      <img src="imagen/imgbiodiversa2.jpg.jpeg" alt="Diseño natural biodiverso">
+    </div>
+  </section>
 </section>
 
-<section id="contacto">
-    <h2 class="titulo">Contacto</h2>
-    <p>¿Te gustaría llevar una obra contigo o proponer una colaboración?</p>
-    <ul>
-        <li>📧 Correo: tuemail@ejemplo.com</li>
-        <li>📱 WhatsApp: +57 300 000 0000</li>
-        <li>📸 Instagram: @tuinstagram</li>
-        <li>📘 Facebook: Tu Facebook</li>
-    </ul>
-</section>
+<div class="lightbox" id="lightbox">
+    <img src="" alt="Imagen ampliada">
+</div>
 
 <footer>
     <p>&copy; 2025 KEMON | Arte natural y biodiversidad</p>
 </footer>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox.querySelector('img');
+  const images = document.querySelectorAll('.galeria img');
+
+  images.forEach(img => {
+      img.addEventListener('click', () => {
+          lightbox.style.display = 'flex';
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+      });
+  });
+
+  lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+  });
+</script>
 
 </body>
 </html>
