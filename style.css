@@ -1,0 +1,165 @@
+/* GENERALES */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #121212;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #C9A227;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+/* HEADER */
+header img {
+  width: 100%;
+  display: block;
+}
+
+/* SECCIONES */
+section {
+  padding: 50px 20px;
+}
+
+/* BIENVENIDA */
+.contenedor-sobre-mi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.contenedor-sobre-mi img {
+  max-width: 300px;
+  border: 4px solid #C9A227;
+  border-radius: 15px;
+}
+
+.texto-sobre-mi {
+  max-width: 500px;
+}
+
+/* PRODUCTOS */
+.frase-productos {
+  color: #C9A227;
+  margin-bottom: 30px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.linea {
+  text-align: center;
+  max-width: 220px;
+}
+
+.linea img {
+  width: 100%;
+  border-radius: 12px;
+  border: 3px solid #C9A227;
+}
+
+.linea h3 {
+  margin-top: 10px;
+  color: #C9A227;
+}
+
+/* SERVICIOS */
+.frase-servicios {
+  color: #C9A227;
+  margin-bottom: 30px;
+}
+
+.lista-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.servicio {
+  background-color: #1E1E1E;
+  border: 2px solid #C9A227;
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+}
+
+.servicio h3 {
+  color: #C9A227;
+  margin-bottom: 10px;
+}
+
+/* CONTACTO */
+.frase-contacto {
+  color: #C9A227;
+  margin-bottom: 30px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #C9A227;
+  border-radius: 8px;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+}
+
+.formulario-contacto button {
+  background-color: #C9A227;
+  color: #121212;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background-color: #E6B84B;
+}
+
+.redes-contacto a {
+  color: #C9A227;
+  font-size: 1.2em;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.redes-contacto a:hover {
+  color: #E6B84B;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1E1E1E;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #C9A227;
+}
