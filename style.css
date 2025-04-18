@@ -21,9 +21,28 @@ p {
 }
 
 /* HEADER */
+header {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 2px solid #ddd;
+}
+
 header img {
   width: 100%;
   display: block;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #000;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
 }
 
 /* SECCIONES */
@@ -49,84 +68,8 @@ section {
 .texto-sobre-mi {
   max-width: 500px;
 }
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
 
-.abanicos-contenedor {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.abanico {
-  flex: 0 0 auto;
-  width: 250px;
-  text-align: center;
-}
-
-.abanico img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-
-.boton-wsp {
-  display: inline-block;
-  margin-top: 10px;
-  background: #C9A227;
-  color: #121212;
-  padding: 8px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-}
-
-.galeria {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  padding: 20px;
-}
-
-.galeria-item img {
-  width: 150px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* Botón video */
-.boton-video {
-  background-color: #C9A227;
-  color: #121212;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 20px 0;
-}
-
-
-header {
-  background-color: #fff;
-  text-align: center;
-  padding: 30px 20px;
-  border-bottom: 2px solid #ddd;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin: 0;
-  color: #000;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #555;
-  margin-top: 10px;
-}
-
+/* ABANICOS */
 .abanicos-seccion {
   background-color: #fff;
   padding: 30px 20px;
@@ -190,7 +133,6 @@ header p {
 .boton-wsp:hover {
   background-color: #1ebe5d;
 }
-
 
 /* PRODUCTOS */
 .frase-productos {
@@ -285,16 +227,6 @@ header p {
 .formulario-contacto button:hover {
   background-color: #E6B84B;
 }
-button[type="submit"] {
-  background-color: #C9A227;
-  color: #121212;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
 button[type="submit"] {
   background-color: #C9A227;
@@ -312,8 +244,7 @@ button[type="submit"]:hover {
   color: #ffffff;
 }
 
-}
-
+/* REDES CONTACTO */
 .redes-contacto a {
   color: #C9A227;
   font-size: 1.2em;
