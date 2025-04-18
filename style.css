@@ -51,10 +51,62 @@ section {
 }
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  font-family: sans-serif;
 }
+
+.abanicos-contenedor {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.abanico {
+  flex: 0 0 auto;
+  width: 250px;
+  text-align: center;
+}
+
+.abanico img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.boton-wsp {
+  display: inline-block;
+  margin-top: 10px;
+  background: #C9A227;
+  color: #121212;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.galeria {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.galeria-item img {
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Botón video */
+.boton-video {
+  background-color: #C9A227;
+  color: #121212;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+}
+
 
 header {
   background-color: #fff;
