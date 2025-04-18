@@ -134,12 +134,7 @@ section {
   background-color: #1ebe5d;
 }
 
-/* PRODUCTOS */
-.frase-productos {
-  color: #C9A227;
-  margin-bottom: 30px;
-}
-
+/* GALERÍA DE PRODUCTOS */
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -164,11 +159,6 @@ section {
 }
 
 /* SERVICIOS */
-.frase-servicios {
-  color: #C9A227;
-  margin-bottom: 30px;
-}
-
 .lista-servicios {
   display: flex;
   flex-wrap: wrap;
@@ -191,11 +181,6 @@ section {
 }
 
 /* CONTACTO */
-.frase-contacto {
-  color: #C9A227;
-  margin-bottom: 30px;
-}
-
 .formulario-contacto {
   display: flex;
   flex-direction: column;
@@ -215,19 +200,7 @@ section {
   color: #FFFFFF;
 }
 
-.formulario-contacto button {
-  background-color: #C9A227;
-  color: #121212;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.formulario-contacto button:hover {
-  background-color: #E6B84B;
-}
-
+.formulario-contacto button,
 button[type="submit"] {
   background-color: #C9A227;
   color: #121212;
@@ -239,12 +212,24 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
+.formulario-contacto button:hover,
 button[type="submit"]:hover {
   background-color: #a8831d;
   color: #ffffff;
 }
 
-/* REDES CONTACTO */
+/* VIDEOS */
+.boton-video {
+  background-color: #C9A227;
+  color: #121212;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+/* REDES */
 .redes-contacto a {
   color: #C9A227;
   font-size: 1.2em;
