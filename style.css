@@ -191,6 +191,39 @@ header p {
   background-color: #1ebe5d;
 }
 
+.carrete-section {
+  background-color: #000; /* Fondo negro elegante */
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2rem;
+  color: gold;
+  margin-bottom: 1rem;
+}
+
+.carrete-horizontal {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.carrete-horizontal img {
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid gold;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.carrete-horizontal img:hover {
+  transform: scale(1.05);
+}
+
 
 /* PRODUCTOS */
 .frase-productos {
