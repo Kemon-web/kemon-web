@@ -1,79 +1,98 @@
-/* Estilos Generales - Elegancia y Contraste */
-:root {
-    --oro: #D4AF37;
-    --oro-oscuro: #AA8B2B;
-    --negro: #121212;
-    --blanco: #FFFFFF;
-    --crema: #FAF9F6;
-}
+/* =========================================
+   ESTILOS KEMON - NEGRO Y DORADO
+   ========================================= */
 
+/* --- GENERALES --- */
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: var(--crema);
-    color: var(--negro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    background-color: #121212; /* Fondo Negro */
+    color: #FFFFFF;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: var(--negro);
+h2 {
+    font-size: 2.5em;
+    color: #C9A227; /* Dorado */
+    text-align: center;
+    margin: 40px 0 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-/* Header y Logo */
-header {
-    background-color: var(--negro);
-    padding: 2rem 0;
+p {
+    font-size: 1.1em;
+    color: #E0E0E0;
     text-align: center;
-    border-bottom: 4px solid var(--oro);
+    margin-bottom: 20px;
+}
+
+/* --- HEADER Y LOGO --- */
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid #C9A227; /* Línea dorada */
 }
 
 .logo-principal {
-    max-width: 250px;
+    max-width: 250px; /* Tamaño del logo */
     height: auto;
 }
 
-/* Secciones */
+/* --- SECCIONES --- */
 section {
-    padding: 3rem 1rem;
+    padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-/* Sobre Mí */
+/* --- SOBRE MÍ --- */
 .contenedor-sobre-mi {
     display: flex;
-    align-items: center;
-    gap: 2rem;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
 }
 
 .contenedor-sobre-mi img {
     max-width: 300px;
-    border-radius: 50%;
-    border: 5px solid var(--oro);
+    border: 4px solid #C9A227;
+    border-radius: 15px;
 }
 
-/* Productos */
+.texto-sobre-mi {
+    max-width: 500px;
+    text-align: justify;
+}
+
+/* --- PRODUCTOS / ABANICOS --- */
+.abanicos-seccion {
+    background-color: #1A1A1A; /* Fondo gris muy oscuro para contraste */
+    border-radius: 15px;
+    margin: 20px;
+}
+
 .abanicos-contenedor {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
 }
 
 .abanico {
-    background: var(--blanco);
-    padding: 1rem;
-    border-radius: 1rem;
+    flex: 0 0 auto;
+    width: 280px;
+    background-color: #222222;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
     transition: transform 0.3s;
 }
 
@@ -82,93 +101,173 @@ h2 {
 }
 
 .abanico img {
-    max-width: 100%;
-    border-radius: 0.5rem;
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    display: block;
 }
 
-/* Botones WhatsApp */
-.boton-wsp, .boton-dorado {
+.abanico .descripcion {
+    font-size: 1rem;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.boton-wsp {
     display: inline-block;
-    background-color: var(--oro);
-    color: var(--negro);
-    padding: 0.8rem 1.5rem;
-    border-radius: 0.5rem;
+    margin: 10px auto;
+    padding: 12px 20px;
+    background-color: #C9A227; /* Dorado */
+    color: #121212;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 1rem;
+    transition: background-color 0.3s;
 }
 
-.boton-wsp:hover, .boton-dorado:hover {
-    background-color: var(--oro-oscuro);
+.boton-wsp:hover {
+    background-color: #E6B84B;
 }
 
-/* Exclusivos */
-#exclusivos {
-    background-color: var(--negro);
-    color: var(--blanco);
-    border-radius: 1rem;
+/* --- CARRETE HORIZONTAL --- */
+.carrete-section {
+    background-color: #000000;
+    padding: 4rem 2rem;
 }
 
-#exclusivos h2, #exclusivos h3 {
-    color: var(--oro);
-}
-
-.contenedor-exclusivos {
-    display: flex;
-    justify-content: center;
-}
-
-.item-exclusivo {
-    background: #222;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    max-width: 400px;
-    text-align: center;
-}
-
-/* Carrete Horizontal */
 .carrete-horizontal {
     display: flex;
     overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 15px;
+    padding: 10px 0;
 }
 
 .carrete-horizontal img {
     height: 200px;
-    border-radius: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #C9A227;
+    flex-shrink: 0;
 }
 
-/* Formulario */
+/* --- GALERÍA GENERAL --- */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.linea {
+    text-align: center;
+    width: 220px;
+    background: #1A1A1A;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.linea img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #C9A227;
+}
+
+.linea h3 {
+    color: #C9A227;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* --- SERVICIOS --- */
+.lista-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicio {
+    background-color: #1E1E1E;
+    border: 2px solid #C9A227;
+    padding: 25px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+}
+
+.servicio h3 {
+    color: #C9A227;
+    margin-bottom: 15px;
+}
+
+/* --- CONTACTO Y FORMULARIO --- */
 .formulario-contacto {
-    max-width: 600px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.formulario-contacto input, .formulario-contacto textarea {
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
 }
 
-.formulario-contacto button {
-    background-color: var(--negro);
-    color: var(--blanco);
-    padding: 1rem;
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #C9A227;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #C9A227;
+    color: #121212;
     border: none;
-    border-radius: 0.5rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    width: 100%;
 }
 
-/* Footer */
-footer {
-    background-color: var(--negro);
-    color: var(--oro);
+button[type="submit"]:hover {
+    background-color: #E6B84B;
+}
+
+.redes-contacto {
     text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 30px;
+}
+
+.redes-contacto a {
+    color: #C9A227;
+    font-size: 1.2em;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 2px solid #C9A227;
+}
+
+footer p {
+    color: #C9A227;
+    margin: 0;
 }
