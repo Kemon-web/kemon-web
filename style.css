@@ -1,49 +1,52 @@
 /* =========================================
-   ESTILOS KEMON - NEGRO Y DORADO
+   ESTILOS KEMON - GALERÍA BOUTIQUE
    ========================================= */
 
 /* --- GENERALES --- */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente más elegante */
     margin: 0;
-    background-color: #121212; /* Fondo Negro */
-    color: #FFFFFF;
-    line-height: 1.6;
+    background-color: #FAF9F6; /* Fondo blanco crema muy suave */
+    color: #333333; /* Texto gris muy oscuro, más suave que el negro puro */
+    line-height: 1.7;
 }
 
-h2 {
-    font-size: 2.5em;
-    color: #C9A227; /* Dorado */
+h2, h3 {
+    font-family: 'Georgia', serif; /* Fuente serif para títulos elegantes */
+    color: #121212;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     text-align: center;
     margin: 40px 0 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 p {
     font-size: 1.1em;
-    color: #E0E0E0;
+    color: #555555;
     text-align: center;
     margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* --- HEADER Y LOGO --- */
 header {
-    background-color: #000000;
+    background-color: #FFFFFF;
     text-align: center;
-    padding: 30px 20px;
-    border-bottom: 3px solid #C9A227; /* Línea dorada */
+    padding: 20px;
+    border-bottom: 1px solid #E0E0E0;
 }
 
 .logo-principal {
-    max-width: 250px; /* Tamaño del logo */
+    max-width: 200px; /* Logo más sutil */
     height: auto;
 }
 
 /* --- SECCIONES --- */
 section {
-    padding: 50px 20px;
-    max-width: 1200px;
+    padding: 60px 20px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -52,86 +55,90 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
 }
 
 .contenedor-sobre-mi img {
-    max-width: 300px;
-    border: 4px solid #C9A227;
-    border-radius: 15px;
+    max-width: 280px;
+    border-radius: 50%; /* Foto redonda más artística */
+    border: 2px solid #C9A227; /* Borde dorado fino */
 }
 
 .texto-sobre-mi {
     max-width: 500px;
-    text-align: justify;
+    text-align: left;
 }
 
-/* --- PRODUCTOS / ABANICOS --- */
+/* --- PRODUCTOS / GALERÍA DE EVIDENCIA --- */
 .abanicos-seccion {
-    background-color: #1A1A1A; /* Fondo gris muy oscuro para contraste */
-    border-radius: 15px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra muy suave */
     margin: 20px;
+    padding: 40px;
 }
 
 .abanicos-contenedor {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 20px;
-    scroll-snap-type: x mandatory;
+    display: grid; /* Usamos grid para que se vean bien las fotos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
 }
 
 .abanico {
-    flex: 0 0 auto;
-    width: 280px;
-    background-color: #222222;
-    border: 1px solid #333;
-    border-radius: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
     overflow: hidden;
-    scroll-snap-align: start;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     text-align: center;
     padding-bottom: 15px;
-    transition: transform 0.3s;
+    transition: box-shadow 0.3s;
 }
 
 .abanico:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
 .abanico img {
     width: 100%;
-    height: 250px;
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    height: 300px; /* Imágenes más grandes para que se vean bien */
+    object-fit: cover;
     display: block;
 }
 
 .abanico .descripcion {
-    font-size: 1rem;
-    padding: 10px;
-    color: #FFFFFF;
+    font-size: 0.95rem;
+    padding: 15px;
+    color: #555;
+    height: 50px;
+    overflow: hidden;
 }
 
 .boton-wsp {
     display: inline-block;
     margin: 10px auto;
-    padding: 12px 20px;
-    background-color: #C9A227; /* Dorado */
-    color: #121212;
-    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #FFFFFF; /* Botón blanco con borde dorado */
+    color: #C9A227;
+    border: 1px solid #C9A227;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.3s;
 }
 
 .boton-wsp:hover {
-    background-color: #E6B84B;
+    background-color: #C9A227;
+    color: #FFFFFF;
 }
 
 /* --- CARRETE HORIZONTAL --- */
 .carrete-section {
-    background-color: #000000;
+    background-color: #FAF9F6;
     padding: 4rem 2rem;
 }
 
@@ -143,63 +150,10 @@ section {
 }
 
 .carrete-horizontal img {
-    height: 200px;
-    border-radius: 10px;
-    border: 2px solid #C9A227;
-    flex-shrink: 0;
-}
-
-/* --- GALERÍA GENERAL --- */
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    padding: 20px;
-}
-
-.linea {
-    text-align: center;
-    width: 220px;
-    background: #1A1A1A;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.linea img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 250px; /* Fotos más grandes */
     border-radius: 8px;
-    border: 2px solid #C9A227;
-}
-
-.linea h3 {
-    color: #C9A227;
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-/* --- SERVICIOS --- */
-.lista-servicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.servicio {
-    background-color: #1E1E1E;
-    border: 2px solid #C9A227;
-    padding: 25px;
-    border-radius: 15px;
-    width: 280px;
-    text-align: center;
-}
-
-.servicio h3 {
-    color: #C9A227;
-    margin-bottom: 15px;
+    border: 1px solid #E0E0E0;
+    flex-shrink: 0;
 }
 
 /* --- CONTACTO Y FORMULARIO --- */
@@ -208,18 +162,18 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 .formulario-contacto input,
 .formulario-contacto textarea {
     width: 100%;
-    padding: 12px;
-    border: 2px solid #333;
-    border-radius: 8px;
-    background-color: #1E1E1E;
-    color: #FFFFFF;
+    padding: 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #333333;
 }
 
 .formulario-contacto input:focus,
@@ -229,20 +183,22 @@ section {
 }
 
 button[type="submit"] {
-    background-color: #C9A227;
-    color: #121212;
+    background-color: #121212; /* Botón negro */
+    color: #FFFFFF;
     border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     cursor: pointer;
     transition: background-color 0.3s;
     width: 100%;
 }
 
 button[type="submit"]:hover {
-    background-color: #E6B84B;
+    background-color: #C9A227;
 }
 
 .redes-contacto {
@@ -252,7 +208,7 @@ button[type="submit"]:hover {
 
 .redes-contacto a {
     color: #C9A227;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -260,14 +216,15 @@ button[type="submit"]:hover {
 
 /* --- FOOTER --- */
 footer {
-    background-color: #000000;
+    background-color: #FFFFFF;
     text-align: center;
     padding: 30px;
-    margin-top: 40px;
-    border-top: 2px solid #C9A227;
+    margin-top: 60px;
+    border-top: 1px solid #E0E0E0;
 }
 
 footer p {
-    color: #C9A227;
+    color: #888888;
+    font-size: 0.9em;
     margin: 0;
 }
