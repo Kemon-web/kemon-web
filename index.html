@@ -1,244 +1,334 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KEMON Sombreros y Accesorios</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KEMON · Sombreros y Accesorios Artesanales | Cartagena</title>
+<meta name="description" content="Sombreros y abanicos en paja natural, pintados a mano por Kelly Montes Buelvas. Arte caribeño, cultura y biodiversidad en piezas únicas hechas en Cartagena.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-  
 <body>
-  <!-- INICIO -->
-  <header id="inicio">
-    <img src="img/banner-sombreros.jpg" alt="Sombreros KEMON">
-  </header>
 
-  <!-- BIENVENIDOS -->
-  <section id="sobre-mi">
-    <h2>Bienvenidos</h2>
-    <div class="contenedor-sobre-mi">
-      <img src="img/kelly.jpg" alt="Kelly Montes Buelvas pintando sombreros">
-      <div class="texto-sobre-mi">
-        <p>Soy Kelly Montes Buelvas, artista apasionada por la conservación ambiental. A través de mis obras plasmo cultura, biodiversidad y color sobre sombreros y accesorios en paja natural. Cada pieza es única pintada a mano y cuenta una historia diferente que refleja el amor por nuestras tradiciones caribeñas. Un accesorio que no encontrarás en ninguna tienda común.</p>
-      </div>
-    </div>
-  </section>
+<!-- ===== BARRA SUPERIOR ===== -->
+<div class="franja-top">Piezas únicas pintadas a mano · Cartagena, Colombia</div>
 
-  <section class="nuevos-productos">
-    <h1>Nuevos productos KEMON</h1>
-    <p>¡Estan increibles!</p>
- 
+<!-- ===== NAV ===== -->
+<header class="nav-wrap">
+  <nav class="nav">
+    <a href="#inicio" class="logo">KEMON<span>·</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre-mi">Historia</a></li>
+      <li><a href="#nuevos-productos">Colección</a></li>
+      <li><a href="#exclusivos-kemon">Exclusivos</a></li>
+      <li><a href="#lineas-productos">Líneas</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/573106430560?text=Hola%2C%20quiero%20conocer%20más%20de%20KEMON" target="_blank" class="nav-cta">WhatsApp</a>
+  </nav>
+</header>
 
-  <section class="abanicos-seccion">
-    <h2>Obra de arte con historia</h2>
-    <div class="abanicos-contenedor">
+<!-- ===== HERO ===== -->
+<header id="inicio" class="hero">
+  <img src="img/banner-sombreros.jpg" alt="Sombreros KEMON pintados a mano" class="hero-img">
+  <div class="hero-overlay"></div>
+  <div class="hero-contenido reveal">
+    <p class="eyebrow eyebrow--claro">Atelier artesanal · Cartagena de Indias</p>
+    <h1>Arte caribeño<br><em>para llevar puesto</em></h1>
+    <p class="hero-texto">Sombreros y accesorios en paja natural, pintados a mano, uno por uno, con la cultura, el color y la biodiversidad del Caribe colombiano.</p>
+    <div class="hero-botones">
+      <a href="#nuevos-productos" class="btn btn--dorado">Ver colección</a>
+      <a href="https://wa.me/573106430560?text=Hola%2C%20quiero%20conocer%20más%20de%20KEMON" target="_blank" class="btn btn--linea">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</header>
 
-     
-      <div class="abanico">
-        <img src="img/entregado1.jpg" alt="Souvenirs for Events">
-        <p class="descripcion">Souvenirs para tus eventos — <strong>Encargar otro similar</strong></p>
-        <a class="boton-wsp" href="https://wa.me/573106430560?text=Hola%20quiero%20comprar%20el%20Abanico%20con%20colibrí" target="_blank">Pedir por WhatsApp</a>
-      </div>
+<div class="divisor" aria-hidden="true">
+  <svg viewBox="0 0 600 24" preserveAspectRatio="none"><path d="M0 12 C 100 2, 200 22, 300 12 S 500 2, 600 12" /></svg>
+</div>
 
-      <div class="abanico">
-        <img src="img/mujer1.jpg" alt="Souvenirs for women">
-        <p class="descripcion">Souvenirs para Mujer — <strong>Encargar otro similar</strong></p>
-        <a class="boton-wsp" href="https://wa.me/573106430560?text=Hola%20quiero%20comprar%20el%20Abanico%20con%20colibrí" target="_blank">Pedir por WhatsApp</a>
-      </div>
-
-      <!-- Agrega más abanicos según necesites -->
-      <div class="abanico">
-        <img src="img/patrimonial3.jpg" alt="Cartagena patrimonial">
-        <p class="descripcion">Calles de Cartagena — pieza única — <strong>Encargar otro similar</strong></p>
-        <a class="boton-wsp" href="https://wa.me/573106430560?text=Hola%20quiero%20comprar%20el%20Abanico%20con%20colibrí" target="_blank">Encargar otro similar</a>
-      </div>
-
-      <div class="abanico">
-        <img src="img/patrimonial2.jpg" alt="Cartagena patrimonial">
-        <p class="descripcion">El Reducto Cartagena — pieza única — <strong>Encargar otro similar</strong></p>
-        <a class="boton-wsp" href="https://wa.me/573106430560?text=Hola%20quiero%20comprar%20el%20Abanico%20con%20colibrí" target="_blank">Encargar otro similar</a>
-      </div>
-
-      <div class="abanico">
-        <img src="img/patrimonial1.jpg" alt="Cartagena patrimonial">
-        <p class="descripcion">Cartagena anaranjada — pieza única — <strong>Encargar otro similar</strong></p>
-        <a class="boton-wsp" href="https://wa.me/573106430560?text=Hola%20quiero%20comprar%20el%20Abanico%20con%20colibrí" target="_blank">Encargar otro similar</a>
-      </div>
-      
-      <div class="abanico">
-        <img src="img/macondo1.jpg" alt="Sombrero Macondo Inmortal">
-        <p class="descripcion">Sombrero "Macondo Inmortal" — pieza única — <strong>Disponible</strong></p>
-        <a class="boton-wsp" href="https://wa.me/573001234567?text=Hola%20quiero%20comprar%20el%20Abanico%20con%20colibrí" target="_blank">Pedir por WhatsApp</a>
-      </div>
-      
-       <div class="abanico">
-        <img src="img/macondo2.jpg" alt="Sombrero Mariposa de Macondo">
-        <p class="descripcion">Sombrero Mariposa de Macondo -pieza única — <strong>Disponible</strong></p>
-        <a class="boton-wsp" href="https://wa.me/573106430560?text=Hola%20quiero%20comprar%20el%20Abanico%20con%20guacamayo" target="_blank">Pedir por WhatsApp</a>
-      </div>
-
-    </div>
-  </section>
-  
-<section class="exclusivos-kemon" style="background-color: #000; color: #fff; padding: 3rem; text-align: center;">
-  <h2 style="font-size: 3rem; color: #FFD700;">Exclusivos KEMON</h2>
-  <p style="margin-bottom: 2rem;">Piezas únicas y de edición limitada, creadas a mano por KEMON. Cada obra lleva certificado de autenticidad.</p>
-  
-  <div style="display: flex; overflow-x: auto; gap: 1.5rem; padding-bottom: 2rem;">
-    <div style="background: #111; border-radius: 1rem; padding: 1rem; min-width: 280px;">
-      <img src="img/macondo.jpg" alt="Macondo Inmortal" style="border-radius: 0.5rem; width: 100%;">
-      <h3 style="color: #FFD700; margin: 1rem 0 0.5rem;">Macondo Inmortal</h3>
-      <p>Sombrero pintado a mano inspirado en Gabriel García Márquez. <br><strong>Edición única.</strong></p>
-      <a href="https://wa.me/57300xxxxxxx" target="_blank" style="display: inline-block; background: #FFD700; color: #000; padding: 0.5rem 1rem; border-radius: 0.5rem; text-decoration: none; margin-top: 0.5rem;">Pedir ahora</a>
-    </div>
-  </div>
+<!-- ===== BIENVENIDOS ===== -->
+<section id="sobre-mi" class="seccion reveal">
+  <p class="eyebrow">Bienvenidos</p>
+  <h2>Detrás de cada pieza, una historia</h2>
+  <div class="contenedor-sobre-mi">
+    <div class="marco-foto">
+      <img src="img/kelly.jpg" alt="Kelly Montes Buelvas pintando sombreros">
+    </div>
+    <div class="texto-sobre-mi">
+      <p>Soy Kelly Montes Buelvas, artista apasionada por la conservación ambiental. A través de mis obras plasmo cultura, biodiversidad y color sobre sombreros y accesorios en paja natural.</p>
+      <p>Cada pieza es única, pintada a mano, y cuenta una historia diferente que refleja el amor por nuestras tradiciones caribeñas. Un accesorio que no encontrarás en ninguna tienda común.</p>
+      <a href="https://wa.me/573106430560?text=Hola%2C%20quiero%20conocer%20más%20de%20KEMON" target="_blank" class="btn btn--outline-negro">Conoce el proceso</a>
+    </div>
+  </div>
 </section>
 
-  <section id="bio-carrete" class="carrete-section">
-  <h2 class="titulo-seccion">Línea BIOdiversa - souvenir for events- Producción entregada</h2>
-  <div class="carrete-horizontal">
-    <!-- Reemplaza los nombres de archivo con los correctos -->
-    <img src="img/bio1.jpg" alt="BIOdiversa 1">
-    <img src="img/bio2.jpg" alt="BIOdiversa 2">
-    <img src="img/bio3.jpg" alt="BIOdiversa 3">
-    <img src="img/bio4.jpg" alt="BIOdiversa 4">
-    <img src="img/bio5.jpg" alt="BIOdiversa 5">
-    <img src="img/bio6.jpg" alt="BIOdiversa 6">
-    <img src="img/bio7.jpg" alt="BIOdiversa 7">
-    <img src="img/bio8.jpg" alt="BIOdiversa 8">
-    <img src="img/bio9.jpg" alt="BIOdiversa 9">
-    <img src="img/bio10.jpg" alt="BIOdiversa 10">
-    <img src="img/bio11.jpg" alt="BIOdiversa 11">
-    <img src="img/bio12.jpg" alt="BIOdiversa 12">
-    <img src="img/bio13.jpg" alt="BIOdiversa 13">
-    <img src="img/bio14.jpg" alt="BIOdiversa 14">
-    <img src="img/bio15.jpg" alt="BIOdiversa 15">
-    <img src="img/bio16.jpg" alt="BIOdiversa 16">
-    <img src="img/bio17.jpg" alt="BIOdiversa 17">
-    <img src="img/bio18.jpg" alt="BIOdiversa 18">
-    <img src="img/bio19.jpg" alt="BIOdiversa 19">
-    <img src="img/bio20.jpg" alt="BIOdiversa 20">
-    <img src="img/bio21.jpg" alt="BIOdiversa 21">
-    <img src="img/bio22.jpg" alt="BIOdiversa 22">
-    <img src="img/bio23.jpg" alt="BIOdiversa 23">
-    <img src="img/bio24.jpg" alt="BIOdiversa 24">
-    <!-- Repite hasta las 50 imágenes -->
-  </div>
+<!-- ===== NUEVOS PRODUCTOS ===== -->
+<section id="nuevos-productos" class="seccion seccion--crema reveal">
+  <p class="eyebrow">Recién pintados</p>
+  <h2>Nuevos productos KEMON</h2>
+  <p class="frase-seccion">Piezas frescas de taller, listas para su próximo dueño.</p>
+
+  <div class="abanicos-contenedor">
+    <article class="tarjeta">
+      <div class="tarjeta-img"><img src="img/entregado1.jpg" alt="Souvenirs para eventos KEMON" loading="lazy"></div>
+      <p class="tarjeta-titulo">Souvenirs para tus eventos</p>
+      <p class="tarjeta-tag">Encargar otro similar</p>
+      <a class="btn btn--wsp" href="https://wa.me/573106430560?text=Hola%2C%20quiero%20un%20souvenir%20similar%20para%20un%20evento" target="_blank">Pedir por WhatsApp</a>
+    </article>
+
+    <article class="tarjeta">
+      <div class="tarjeta-img"><img src="img/mujer1.jpg" alt="Souvenirs para mujer KEMON" loading="lazy"></div>
+      <p class="tarjeta-titulo">Souvenirs para mujer</p>
+      <p class="tarjeta-tag">Encargar otro similar</p>
+      <a class="btn btn--wsp" href="https://wa.me/573106430560?text=Hola%2C%20quiero%20un%20souvenir%20similar%20para%20mujer" target="_blank">Pedir por WhatsApp</a>
+    </article>
+
+    <article class="tarjeta">
+      <div class="tarjeta-img"><img src="img/patrimonial3.jpg" alt="Sombrero Calles de Cartagena" loading="lazy"></div>
+      <p class="tarjeta-titulo">Calles de Cartagena</p>
+      <p class="tarjeta-tag tarjeta-tag--unica">Pieza única</p>
+      <a class="btn btn--wsp" href="https://wa.me/573106430560?text=Hola%2C%20quiero%20un%20sombrero%20similar%20a%20Calles%20de%20Cartagena" target="_blank">Encargar otro similar</a>
+    </article>
+
+    <article class="tarjeta">
+      <div class="tarjeta-img"><img src="img/patrimonial2.jpg" alt="Sombrero El Reducto Cartagena" loading="lazy"></div>
+      <p class="tarjeta-titulo">El Reducto Cartagena</p>
+      <p class="tarjeta-tag tarjeta-tag--unica">Pieza única</p>
+      <a class="btn btn--wsp" href="https://wa.me/573106430560?text=Hola%2C%20quiero%20un%20sombrero%20similar%20a%20El%20Reducto" target="_blank">Encargar otro similar</a>
+    </article>
+
+    <article class="tarjeta">
+      <div class="tarjeta-img"><img src="img/patrimonial1.jpg" alt="Sombrero Cartagena anaranjada" loading="lazy"></div>
+      <p class="tarjeta-titulo">Cartagena anaranjada</p>
+      <p class="tarjeta-tag tarjeta-tag--unica">Pieza única</p>
+      <a class="btn btn--wsp" href="https://wa.me/573106430560?text=Hola%2C%20quiero%20un%20sombrero%20similar%20a%20Cartagena%20anaranjada" target="_blank">Encargar otro similar</a>
+    </article>
+
+    <article class="tarjeta">
+      <div class="tarjeta-img"><img src="img/macondo1.jpg" alt="Sombrero Macondo Inmortal" loading="lazy"></div>
+      <p class="tarjeta-titulo">Sombrero "Macondo Inmortal"</p>
+      <p class="tarjeta-tag tarjeta-tag--disponible">Disponible</p>
+      <a class="btn btn--wsp" href="https://wa.me/573106430560?text=Hola%2C%20quiero%20comprar%20el%20sombrero%20Macondo%20Inmortal" target="_blank">Pedir por WhatsApp</a>
+    </article>
+
+    <article class="tarjeta">
+      <div class="tarjeta-img"><img src="img/macondo2.jpg" alt="Sombrero Mariposa de Macondo" loading="lazy"></div>
+      <p class="tarjeta-titulo">Sombrero Mariposa de Macondo</p>
+      <p class="tarjeta-tag tarjeta-tag--disponible">Disponible</p>
+      <a class="btn btn--wsp" href="https://wa.me/573106430560?text=Hola%2C%20quiero%20comprar%20el%20sombrero%20Mariposa%20de%20Macondo" target="_blank">Pedir por WhatsApp</a>
+    </article>
+  </div>
 </section>
 
+<!-- ===== EXCLUSIVOS KEMON ===== -->
+<section id="exclusivos-kemon" class="seccion seccion--negra reveal">
+  <p class="eyebrow eyebrow--dorado">Edición limitada</p>
+  <h2 class="titulo-claro">Exclusivos KEMON</h2>
+  <p class="frase-seccion frase-seccion--clara">Piezas únicas y de edición limitada, creadas a mano por KEMON. Cada obra lleva certificado de autenticidad.</p>
 
-  <!-- LÍNEAS DE PRODUCTOS -->
-  <section id="lineas-productos">
-    <h2>Nuestras Líneas de Sombreros y accesorios</h2>
-    <p class="frase-productos">Cinco formas de contar historias con color, cada una es una obra de arte con personalidad.</p>
-    <div class="galeria">
-      <div class="linea">
-        <h3>Línea: BIOdiversa Personalizada </h3>
-        <img src="img/biodiversa1.jpg" alt="Línea BIOdiversa">
-        <img src="img/biodiversa2.jpg" alt="Línea BIOdiversa">        
-      </div>
-      <div class="linea">
-        <h3>Accesorios- Abanicos de Mano </h3>
-        <img src="img/producto1.jpg" alt="Línea Macondo"> 
-        <img src="img/producto2.jpg" alt="Abanico Mariposa EnaMorada">
-        <img src="img/producto3.jpg" alt="Abanico flores tropicales">  
-      </div>
-      <div class="linea">
-        <h3>Línea: Cartagena Patrimonial </h3>
-        <img src="img/patrimonial1.jpg" alt="sombrero Cartagena Patrimonial">
-        <img src="img/patrimonial2.jpg" alt="sombrero Cartagena Patrimonial">
-        <img src="img/patrimonial3.jpg" alt="sombrero Cartagena Patrimonial">
-        <img src="img/patrimonial4.jpg" alt="sombrero Cartagena Patrimonial"> 
-      </div>
-      <div class="linea">
-        <h3>Línea: Mi U </h3>
-        <img src="img/miu1.jpg" alt="Línea Mi U">
-        <img src="img/miu2.jpg" alt="Línea Mi U">
-        <img src="img/miu3.jpg" alt="Línea Mi U">    
-      </div>
-      <div class="linea">
-        <h3>Línea: Macondo (En produccion) </h3>
-        <img src="img/producto5.jpg" alt="Línea Abanicos Macondo en Flor"> 
-        <img src="img/producto4.jpg" alt="Línea Abanicos Macondo en Flor"> 
-      </div>
-      <div class="linea">
-        <h3>Línea: Picotera </h3>
-        <img src="img/picotera1.jpg" alt="Línea Pickup">
-        <img src="img/picotera2.jpg" alt="Línea Pickup">        
-      </div>
-     
-    <section id="bio-carrete" class="carrete-section">
-    <h2 class="titulo-seccion">Sombreros Carnaval 2025</h2>
-    <div class="carrete-horizontal">
-      <!-- Reemplaza los nombres de archivo con los correctos -->
-      <img src="img/carnavalera1.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera2.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera3.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera4.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera5.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera6.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera7.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera8.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera9.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera10.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera11.jpg" alt="Línea Carnavalera">
-      <img src="img/carnavalera12.jpg" alt="Línea Carnavalera">       
-    </div>
-  </section>
-
-  <!-- SERVICIOS -->
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <p class="frase-servicios">Lleva tu idea al sombrero, crea tu propio diseño personalizado.</p>
-    <div class="lista-servicios">
-      <div class="servicio">
-        <h3>Pintura Personalizada</h3>
-        <p>Transforma sombreros y abanicos en piezas únicas con tu propio diseño o idea especial.</p>
-      </div>
-      <div class="servicio">
-        <h3>Talleres de Pintura</h3>
-        <p>Aprende a pintar sobre paja natural en talleres creativos para niños, jóvenes y adultos.</p>
-      </div>
-      <div class="servicio">
-        <h3>Diseños para Eventos</h3>
-        <p>Creamos colecciones temáticas para eventos culturales, carnavales y celebraciones especiales.</p>
-      </div>
-    </div>
-
-  </section>
-<section id="videos" style="text-align: center; padding: 50px 20px; background-color: #f9f9f9;">
-  <h2 style="color: #C9A227; margin-bottom: 20px;">🎥 Nuestros Videos</h2>
-  <p style="margin-bottom: 30px; color: #333;">Descubre más sobre nuestros sombreros, pintura y tradición en video.</p>
-
-  <a href="https://www.facebook.com/share/163Nr1wWtt/" target="_blank" style="background-color: #C9A227; color: #121212; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-size: 16px; margin: 10px; display: inline-block;">
-    📽️ Ver video en Facebook
-  </a>
-
-  <!-- Si tienes más videos, solo copia este bloque <a> y cambia el enlace -->
+  <div class="carrusel-exclusivos">
+    <article class="tarjeta-exclusiva">
+      <div class="tarjeta-exclusiva-img"><img src="img/macondo.jpg" alt="Sombrero Macondo Inmortal, edición única"></div>
+      <span class="sello">Certificado de autenticidad</span>
+      <h3>Macondo Inmortal</h3>
+      <p>Sombrero pintado a mano inspirado en Gabriel García Márquez.<br><strong>Edición única.</strong></p>
+      <a href="https://wa.me/573106430560?text=Hola%2C%20quiero%20el%20sombrero%20Macondo%20Inmortal%20de%20edición%20única" target="_blank" class="btn btn--dorado">Pedir ahora</a>
+    </article>
+  </div>
 </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p class="frase-contacto">Hablemos de color, tradición y naturaleza.</p>
-    <form action="https://formsubmit.co/kemonartenatural@gmail.com" method="POST" class="formulario-contacto">
-      <input type="text" name="name" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo" required>
-      <textarea name="message" rows="4" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar Mensaje</button>
-    </form>
-    <div class="redes-contacto">
-      <a href="https://wa.me/573106430560" target="_blank">📱 WhatsApp</a>
-      <a href="https://www.facebook.com/share/163Nr1wWtt/" target="_blank">📘 Facebook</a>
-    </div>
-  </section>
+<!-- ===== BIODIVERSA (CARRETE) ===== -->
+<section id="bio-carrete" class="seccion seccion--crema carrete-section reveal">
+  <p class="eyebrow">Línea BIOdiversa</p>
+  <h2>Souvenirs para eventos · Producción entregada</h2>
+  <div class="carrete-horizontal">
+    <img src="img/bio1.jpg" alt="BIOdiversa 1" loading="lazy">
+    <img src="img/bio2.jpg" alt="BIOdiversa 2" loading="lazy">
+    <img src="img/bio3.jpg" alt="BIOdiversa 3" loading="lazy">
+    <img src="img/bio4.jpg" alt="BIOdiversa 4" loading="lazy">
+    <img src="img/bio5.jpg" alt="BIOdiversa 5" loading="lazy">
+    <img src="img/bio6.jpg" alt="BIOdiversa 6" loading="lazy">
+    <img src="img/bio7.jpg" alt="BIOdiversa 7" loading="lazy">
+    <img src="img/bio8.jpg" alt="BIOdiversa 8" loading="lazy">
+    <img src="img/bio9.jpg" alt="BIOdiversa 9" loading="lazy">
+    <img src="img/bio10.jpg" alt="BIOdiversa 10" loading="lazy">
+    <img src="img/bio11.jpg" alt="BIOdiversa 11" loading="lazy">
+    <img src="img/bio12.jpg" alt="BIOdiversa 12" loading="lazy">
+    <img src="img/bio13.jpg" alt="BIOdiversa 13" loading="lazy">
+    <img src="img/bio14.jpg" alt="BIOdiversa 14" loading="lazy">
+    <img src="img/bio15.jpg" alt="BIOdiversa 15" loading="lazy">
+    <img src="img/bio16.jpg" alt="BIOdiversa 16" loading="lazy">
+    <img src="img/bio17.jpg" alt="BIOdiversa 17" loading="lazy">
+    <img src="img/bio18.jpg" alt="BIOdiversa 18" loading="lazy">
+    <img src="img/bio19.jpg" alt="BIOdiversa 19" loading="lazy">
+    <img src="img/bio20.jpg" alt="BIOdiversa 20" loading="lazy">
+    <img src="img/bio21.jpg" alt="BIOdiversa 21" loading="lazy">
+    <img src="img/bio22.jpg" alt="BIOdiversa 22" loading="lazy">
+    <img src="img/bio23.jpg" alt="BIOdiversa 23" loading="lazy">
+    <img src="img/bio24.jpg" alt="BIOdiversa 24" loading="lazy">
+  </div>
+</section>
 
-  <!-- PIE DE PÁGINA -->
-  <footer>
-    <p>Hecho con amor y pinceles caribeños por KEMON, 2025.</p>
-    <footer style="background-color: #121212; color: #C9A227; text-align: center; padding: 20px 0; margin-top: 40px;">
-  <p>&copy; 2025 KEMON Sombreros y Accesorios. Arte hecho a mano con tradición y color.</p>
-  </footer>
+<!-- ===== LÍNEAS DE PRODUCTOS ===== -->
+<section id="lineas-productos" class="seccion reveal">
+  <p class="eyebrow">Catálogo</p>
+  <h2>Nuestras líneas de sombreros y accesorios</h2>
+  <p class="frase-seccion">Seis formas de contar historias con color; cada línea es una obra de arte con personalidad propia.</p>
 
+  <div class="galeria">
+    <article class="linea">
+      <div class="linea-imgs linea-imgs--2">
+        <img src="img/biodiversa1.jpg" alt="Línea BIOdiversa" loading="lazy">
+        <img src="img/biodiversa2.jpg" alt="Línea BIOdiversa" loading="lazy">
+      </div>
+      <h3>BIOdiversa Personalizada</h3>
+    </article>
+
+    <article class="linea">
+      <div class="linea-imgs linea-imgs--3">
+        <img src="img/producto1.jpg" alt="Abanico línea Macondo" loading="lazy">
+        <img src="img/producto2.jpg" alt="Abanico Mariposa Enamorada" loading="lazy">
+        <img src="img/producto3.jpg" alt="Abanico flores tropicales" loading="lazy">
+      </div>
+      <h3>Abanicos de Mano</h3>
+    </article>
+
+    <article class="linea">
+      <div class="linea-imgs linea-imgs--4">
+        <img src="img/patrimonial1.jpg" alt="Sombrero Cartagena Patrimonial" loading="lazy">
+        <img src="img/patrimonial2.jpg" alt="Sombrero Cartagena Patrimonial" loading="lazy">
+        <img src="img/patrimonial3.jpg" alt="Sombrero Cartagena Patrimonial" loading="lazy">
+        <img src="img/patrimonial4.jpg" alt="Sombrero Cartagena Patrimonial" loading="lazy">
+      </div>
+      <h3>Cartagena Patrimonial</h3>
+    </article>
+
+    <article class="linea">
+      <div class="linea-imgs linea-imgs--3">
+        <img src="img/miu1.jpg" alt="Línea Mi U" loading="lazy">
+        <img src="img/miu2.jpg" alt="Línea Mi U" loading="lazy">
+        <img src="img/miu3.jpg" alt="Línea Mi U" loading="lazy">
+      </div>
+      <h3>Mi U</h3>
+    </article>
+
+    <article class="linea">
+      <div class="linea-imgs linea-imgs--2">
+        <img src="img/producto5.jpg" alt="Abanico Macondo en Flor" loading="lazy">
+        <img src="img/producto4.jpg" alt="Abanico Macondo en Flor" loading="lazy">
+      </div>
+      <h3>Macondo <span class="tarjeta-tag">En producción</span></h3>
+    </article>
+
+    <article class="linea">
+      <div class="linea-imgs linea-imgs--2">
+        <img src="img/picotera1.jpg" alt="Línea Picotera" loading="lazy">
+        <img src="img/picotera2.jpg" alt="Línea Picotera" loading="lazy">
+      </div>
+      <h3>Picotera</h3>
+    </article>
+  </div>
+</section>
+
+<!-- ===== CARNAVAL (CARRETE) ===== -->
+<section id="carnaval" class="seccion seccion--negra carrete-section reveal">
+  <p class="eyebrow eyebrow--dorado">Temporada</p>
+  <h2 class="titulo-claro">Sombreros Carnaval 2025</h2>
+  <div class="carrete-horizontal carrete-horizontal--oscuro">
+    <img src="img/carnavalera1.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera2.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera3.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera4.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera5.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera6.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera7.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera8.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera9.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera10.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera11.jpg" alt="Línea Carnavalera" loading="lazy">
+    <img src="img/carnavalera12.jpg" alt="Línea Carnavalera" loading="lazy">
+  </div>
+</section>
+
+<!-- ===== SERVICIOS ===== -->
+<section id="servicios" class="seccion seccion--crema reveal">
+  <p class="eyebrow">Hecho a tu medida</p>
+  <h2>Servicios</h2>
+  <p class="frase-seccion">Lleva tu idea al sombrero: crea tu propio diseño personalizado.</p>
+
+  <div class="lista-servicios">
+    <article class="servicio">
+      <div class="servicio-icono" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path d="M6 42 L18 30 M18 30 L38 10 a4 4 0 0 1 6 6 L24 36 L14 40 a2 2 0 0 1-2-2 Z"/></svg>
+      </div>
+      <h3>Pintura Personalizada</h3>
+      <p>Transforma sombreros y abanicos en piezas únicas con tu propio diseño o idea especial.</p>
+    </article>
+    <article class="servicio">
+      <div class="servicio-icono" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="8"/><path d="M8 42 c0-9 7-15 16-15 s16 6 16 15"/></svg>
+      </div>
+      <h3>Talleres de Pintura</h3>
+      <p>Aprende a pintar sobre paja natural en talleres creativos para niños, jóvenes y adultos.</p>
+    </article>
+    <article class="servicio">
+      <div class="servicio-icono" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><rect x="8" y="10" width="32" height="24" rx="2"/><path d="M8 16h32 M16 26h6 M16 30h12"/></svg>
+      </div>
+      <h3>Diseños para Eventos</h3>
+      <p>Creamos colecciones temáticas para eventos culturales, carnavales y celebraciones especiales.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ===== VIDEOS ===== -->
+<section id="videos" class="seccion seccion--negra reveal">
+  <p class="eyebrow eyebrow--dorado">Detrás de cámaras</p>
+  <h2 class="titulo-claro">Nuestros videos</h2>
+  <p class="frase-seccion frase-seccion--clara">Descubre más sobre nuestros sombreros, pintura y tradición en video.</p>
+  <a href="https://www.facebook.com/share/163Nr1wWtt/" target="_blank" class="btn btn--dorado">Ver video en Facebook</a>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section id="contacto" class="seccion seccion--crema">
+  <div class="contacto-grid reveal">
+    <div class="contacto-info">
+      <p class="eyebrow">Escríbenos</p>
+      <h2 class="titulo-izq">Hablemos de color, tradición y naturaleza</h2>
+      <p>Cuéntanos tu idea, el evento que estás preparando o la pieza que imaginas. Kelly responde personalmente cada mensaje.</p>
+      <div class="redes-contacto">
+        <a href="https://wa.me/573106430560" target="_blank">WhatsApp</a>
+        <a href="https://www.facebook.com/share/163Nr1wWtt/" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <form action="https://formsubmit.co/kemonartenatural@gmail.com" method="POST" class="formulario-contacto">
+      <input type="text" name="name" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <p class="footer-marca">KEMON</p>
+  <p>Hecho con amor y pinceles caribeños, Cartagena de Indias.</p>
+  <p class="footer-copy">© 2025 KEMON Sombreros y Accesorios. Arte hecho a mano con tradición y color.</p>
+</footer>
+
+<!-- ===== WHATSAPP FLOTANTE ===== -->
+<a href="https://wa.me/573106430560?text=Hola%2C%20quiero%20conocer%20más%20de%20KEMON" target="_blank" class="wsp-flotante" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.6.8 5 2.1 7L3 29l6.7-2.3c1.9 1.1 4.1 1.7 6.3 1.7 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.7c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.4 1.3-3.9-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5.3 9.7 10.1 5 16 5s10.7 4.7 10.7 10.5S21.9 25.7 16 25.7zm5.9-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.1-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
